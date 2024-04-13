@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form-group1">
+          <label for="name">Name<span class="mandatory">*</span></label>
+          <input type="text" id="first-name" name="first-name">
+          <input type="text" id="last-name" name="last-name">
+          <div class="label-container">
+            <label for="first-name"></label>
+            <label for="last-name"></label>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="email">Email<span class="mandatory">*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="experience">Your Experience<span class="mandatory">*</span></label>
+          <div class="rating" id="stars">
+            <span data-value="1">&#9733;</span>
+            <span data-value="2">&#9733;</span>
+            <span data-value="3">&#9733;</span>
+            <span data-value="4">&#9733;</span>
+            <span data-value="5">&#9733;</span>
+          </div>
+          <input type="hidden" id="rating" name="rating" value="0" />
+          <label for="experience" class="normal-label"
+            >Overall, how would rate you experience with us?</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="experience">How satisfied are you with<span class="mandatory">*</span></label>
+          <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            class="normal-label"
+            >Very Unsatisfied</label
+          >
+          <label class="normal-label">Unsatisfied</label>
+          <label class="normal-label">Neutral</label>
+          <label class="normal-label">Satisfied</label>
+          <label class="normal-label">Very Satisfied</label>
+        </div>
+        <div class="form-group">
+          <label for="purchase" class="normal-label">Purchase</label>
+          <input type="radio" name="purchase" id="purchase-good" />
+          <input type="radio" name="purchase" id="purchase-bad" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+        </div>
+        <div class="form-group">
+          <label for="Service" class="normal-label">Service</label>
+          <input type="radio" name="Service" id="Service-good" />
+          <input type="radio" name="Service" id="Service-bad" />
+          <input type="radio" name="Service" id="Service-worst" />
+          <input type="radio" name="Service" id="Service-worst" />
+          <input type="radio" name="Service" id="Service-worst" />
+        </div>
+        <div class="form-group">
+          <label for="Service" class="normal-label">Company Overall</label>
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-good"
+          />
+          <input type="radio" name="Company Overall" id="Company Overall-bad" />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="experience">How likely are you to<span class="mandatory">*</span></label>
+          <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            class="normal-label"
+            >Very Unlikely</label
+          >
+          <label class="normal-label">Unlikely</label>
+          <label class="normal-label">Neutral</label>
+          <label class="normal-label">Likely</label>
+          <label class="normal-label">Very Likely</label>
+        </div>
+        <div class="form-group">
+          <label for="purchase" class="normal-label">Buy from us again</label>
+          <input type="radio" name="purchase" id="purchase-good" />
+          <input type="radio" name="purchase" id="purchase-bad" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+          <input type="radio" name="purchase" id="purchase-worst" />
+        </div>
+        <div class="form-group">
+          <label for="Service" class="normal-label"
+            >Recommend our<br />product to others</label
+          >
+          <input type="radio" name="Service" id="Service-good" />
+          <input type="radio" name="Service" id="Service-bad" />
+          <input type="radio" name="Service" id="Service-worst" />
+          <input type="radio" name="Service" id="Service-worst" />
+          <input type="radio" name="Service" id="Service-worst" />
+        </div>
+        <div class="form-group">
+          <label for="Service" class="normal-label"
+            >Recommend our<br />company to others</label
+          >
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-good"
+          />
+          <input type="radio" name="Company Overall" id="Company Overall-bad" />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+          <input
+            type="radio"
+            name="Company Overall"
+            id="Company Overall-worst"
+          />
+        </div>
+        <div class="form-group">
+          <label for="experience">Additional Comments or suggestions</label>
+          <textarea
+            id="experience"
+            name="experience"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
