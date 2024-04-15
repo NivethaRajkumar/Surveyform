@@ -9,17 +9,16 @@
   <body>
     <div class="container">
       <form action="#">
-        <div class="form-group1">
+        <div class="row g-3">
+          <div class="col">
           <label for="name">Name<span class="mandatory">*</span></label>
-          <input type="text" id="first-name" name="first-name">
-          <input type="text" id="last-name" name="last-name">
-          <div class="label-container">
-            <label for="first-name"></label>
-            <label for="last-name"></label>
-        </div>
-        </div>
-        <br>
-        <br>
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div> 
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+      </div>
+      <br>
         <div class="form-group">
           <label for="email">Email<span class="mandatory">*</span></label>
           <input type="email" id="email" name="email" required />
@@ -34,120 +33,93 @@
             <span data-value="5">&#9733;</span>
           </div>
           <input type="hidden" id="rating" name="rating" value="0" />
+          <br>
           <label for="experience" class="normal-label"
             >Overall, how would rate you experience with us?</label
           >
         </div>
         <div class="form-group">
           <label for="experience">How satisfied are you with<span class="mandatory">*</span></label>
-          <br />
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
-            class="normal-label"
-            >Very Unsatisfied</label
-          >
-          <label class="normal-label">Unsatisfied</label>
-          <label class="normal-label">Neutral</label>
-          <label class="normal-label">Satisfied</label>
-          <label class="normal-label">Very Satisfied</label>
-        </div>
-        <div class="form-group">
-          <label for="purchase" class="normal-label">Purchase</label>
-          <input type="radio" name="purchase" id="purchase-good" />
-          <input type="radio" name="purchase" id="purchase-bad" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-        </div>
-        <div class="form-group">
-          <label for="Service" class="normal-label">Service</label>
-          <input type="radio" name="Service" id="Service-good" />
-          <input type="radio" name="Service" id="Service-bad" />
-          <input type="radio" name="Service" id="Service-worst" />
-          <input type="radio" name="Service" id="Service-worst" />
-          <input type="radio" name="Service" id="Service-worst" />
-        </div>
-        <div class="form-group">
-          <label for="Service" class="normal-label">Company Overall</label>
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-good"
-          />
-          <input type="radio" name="Company Overall" id="Company Overall-bad" />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
-        </div>
-        <br />
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very Satisfied</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr class="purchase">
+                <td>Purchase</td>
+                <td><input type="radio" name="purchase" id="purchase-Very Unsatisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Unsatisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Neutral"></td>
+                <td><input type="radio" name="purchase" id="purchase-Satisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Very Satisfied"></td>
+              </tr>
+              <tr class="service">
+                <td>Service</td>
+                <td><input type="radio" name="service" id="service-Very Unsatisfied"></td>
+                <td><input type="radio" name="service" id="service-Unsatisfied"></td>
+                <td><input type="radio" name="service" id="service-Neutral"></td>
+                <td><input type="radio" name="service" id="service-Satisfied"></td>
+                <td><input type="radio" name="service" id="service-Very Satisfied"></td>
+              </tr>
+              <tr class="company-overall">
+                <td>Company Overall</td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Very Unsatisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Unsatisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Neutral"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overalle-Satisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Very Satisfied"></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
         <div class="form-group">
           <label for="experience">How likely are you to<span class="mandatory">*</span></label>
-          <br />
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
-            class="normal-label"
-            >Very Unlikely</label
-          >
-          <label class="normal-label">Unlikely</label>
-          <label class="normal-label">Neutral</label>
-          <label class="normal-label">Likely</label>
-          <label class="normal-label">Very Likely</label>
-        </div>
-        <div class="form-group">
-          <label for="purchase" class="normal-label">Buy from us again</label>
-          <input type="radio" name="purchase" id="purchase-good" />
-          <input type="radio" name="purchase" id="purchase-bad" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-          <input type="radio" name="purchase" id="purchase-worst" />
-        </div>
-        <div class="form-group">
-          <label for="Service" class="normal-label"
-            >Recommend our<br />product to others</label
-          >
-          <input type="radio" name="Service" id="Service-good" />
-          <input type="radio" name="Service" id="Service-bad" />
-          <input type="radio" name="Service" id="Service-worst" />
-          <input type="radio" name="Service" id="Service-worst" />
-          <input type="radio" name="Service" id="Service-worst" />
-        </div>
-        <div class="form-group">
-          <label for="Service" class="normal-label"
-            >Recommend our<br />company to others</label
-          >
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-good"
-          />
-          <input type="radio" name="Company Overall" id="Company Overall-bad" />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
-          <input
-            type="radio"
-            name="Company Overall"
-            id="Company Overall-worst"
-          />
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Very Unlikely</th>
+                <th>Unlikely</th>
+                <th>Neutral</th>
+                <th>Likely</th>
+                <th>Very Likely</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr class="Buy">
+                <td class="buy-again">Buy from us again</td>
+                <td><input type="radio" name="Buy from us again" id="purchase-Very Unsatisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Unsatisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Neutral"></td>
+                <td><input type="radio" name="purchase" id="purchase-Satisfied"></td>
+                <td><input type="radio" name="purchase" id="purchase-Very Satisfied"></td>
+              </tr>
+              <tr class="product">
+                <td>Recommend our<br>product to others</td>
+                <td><input type="radio" name="service" id="service-Very Unsatisfied"></td>
+                <td><input type="radio" name="service" id="service-Unsatisfied"></td>
+                <td><input type="radio" name="service" id="service-Neutral"></td>
+                <td><input type="radio" name="service" id="service-Satisfied"></td>
+                <td><input type="radio" name="service" id="service-Very Satisfied"></td>
+              </tr>
+              <tr class="Recommend">
+                <td>Recommend our<br>Company to others</td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Very Unsatisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Unsatisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Neutral"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overalle-Satisfied"></td>
+                <td><input type="radio" name="Company Overall" id="Company Overall-Very Satisfied"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="form-group">
           <label for="experience">Additional Comments or suggestions</label>
@@ -161,5 +133,5 @@
         <input type="submit" value="Submit" />
       </form>
     </div>
-  </body>
+    </body>
 </html>
