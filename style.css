@@ -79,21 +79,38 @@ th, td {
   padding: 2px;
   text-align: center;
 }
+th{
+  font-weight: normal;
+}
 
 input[type="radio"] {
   margin: 0 auto; 
   display: block;
 }
+tbody {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
 
 .purchase,
 .company-overall {
   background-color: #e3e6e8;
 }
+.purchase-label {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
 
 .Buy,
 .Recommend {
   background-color: #e3e6e8;
 }
+.myform .col {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  }
+
 
 
 
